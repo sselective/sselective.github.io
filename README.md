@@ -29,6 +29,6 @@ The design is mobile-responsive, accessible, and visually consistent. It include
 - **Student Name:** Sean Mourdhuj  
 - **Unit:** INF0005 Website Design  
 - **Assessment:** Task 3 – Web Design (Professional Task)  
-- **Instructor:** Mr. Chen  
+- **Instructor:** Mr. Tran  
 
 ---

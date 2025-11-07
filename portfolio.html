@@ -24,7 +24,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="portfolio.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -35,32 +35,33 @@
     <h1 class="fw-bold">Projects</h1>
     <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
 
-      <!-- Python Quiz Game Project -->
+      <!-- Python Quiz Game -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="img/quiz-game.jpg" class="card-img-top" alt="Python Quiz Game screenshot">
+          <img src="img/quiz-game.jpg" class="card-img-top" alt="Screenshot of Python Quiz Game" loading="lazy">
           <div class="card-body">
             <h5 class="card-title">Python Quiz Game</h5>
             <p class="card-text">
               An interactive <strong>Python quiz program</strong> that challenges users with random maths and coding questions.
-              It includes scoring, user input validation, replay functionality, and a fun <code>turtle</code> graphics animation at the end.
-              This project demonstrates my understanding of variables, loops, conditionals, functions, and the use of built-in Python libraries.
+              Features scoring, input validation, replay flow, and a finishing animation using <code>turtle</code>.
+              Demonstrates variables, loops, conditionals, functions, and use of standard libraries.
             </p>
             <a href="projects/quiz%20assignment.py" class="btn btn-outline-primary" download>Download Code</a>
           </div>
         </div>
       </div>
 
-      <!-- SnapEats Database Project -->
+      <!-- SnapEats Relational Database -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="img/snapeats.jpg" class="card-img-top" alt="SnapEats database ERD or schema screenshot">
+          <!-- Use the PNG ERD image you showed -->
+          <img src="img/snapeats-erd.png" class="card-img-top" alt="ER diagram for SnapEats database" loading="lazy">
           <div class="card-body">
             <h5 class="card-title">SnapEats Relational Database</h5>
             <p class="card-text">
-              A normalized (3NF) <strong>relational database</strong> I built for a food delivery platform called <em>SnapEats</em>.
-              It includes tables for Members, Restaurants, MenuItems, Orders, OrderItems, and Drivers with defined primary and foreign keys.
-              The SQL script demonstrates referential integrity, sample data insertion, and queries that showcase joins, aggregates, and reporting for data analysis.
+              A normalized (3NF) <strong>food-delivery platform schema</strong> modelling
+              <em>Member</em>, <em>Restaurant</em>, <em>MenuItem</em>, <em>Order</em>, <em>OrderItem</em>, and <em>DeliveryDriver</em>.
+              Includes PK/FK constraints for referential integrity, seed data, and example queries (joins & aggregation) for reporting.
             </p>
             <a href="projects/snapeats.sql" class="btn btn-outline-primary" download>Download SQL</a>
             <a href="projects/snapeats_report.pdf" class="btn btn-outline-secondary ms-2" target="_blank" rel="noopener">View Report</a>

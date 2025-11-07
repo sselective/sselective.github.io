@@ -24,7 +24,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -51,17 +51,19 @@
         </div>
       </div>
 
-      <!-- Placeholder for Future Project -->
+      <!-- SnapEats Database Project -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="img/placeholder-project.jpg" class="card-img-top" alt="Project screenshot">
+          <img src="img/snapeats.jpg" class="card-img-top" alt="SnapEats database ERD or schema screenshot">
           <div class="card-body">
-            <h5 class="card-title">Upcoming Web Project</h5>
+            <h5 class="card-title">SnapEats Relational Database</h5>
             <p class="card-text">
-              A responsive web application currently in development that uses HTML, CSS, and JavaScript to create dynamic, interactive user experiences.
-              It focuses on accessibility, clean design, and real-world problem solving.
+              A normalized (3NF) <strong>relational database</strong> I built for a food delivery platform called <em>SnapEats</em>.
+              It includes tables for Members, Restaurants, MenuItems, Orders, OrderItems, and Drivers with defined primary and foreign keys.
+              The SQL script demonstrates referential integrity, sample data insertion, and queries that showcase joins, aggregates, and reporting for data analysis.
             </p>
-            <a href="#" class="btn btn-outline-secondary disabled">Coming Soon</a>
+            <a href="projects/snapeats.sql" class="btn btn-outline-primary" download>Download SQL</a>
+            <a href="projects/snapeats_report.pdf" class="btn btn-outline-secondary ms-2" target="_blank" rel="noopener">View Report</a>
           </div>
         </div>
       </div>

@@ -1,4 +1,13 @@
+Nice—let’s wire the homepage properly and swap the hero image to a GIF.
+Paste this over your current **`index.html`**. It:
 
+* Uses a GIF (`img/portfolio-demo.gif`) in the hero side image
+* Links “Featured Projects” to your two real projects
+* Cleans copy and adds good alt text + lazy loading
+
+> Make sure you upload your GIF to `img/portfolio-demo.gif` (or change the filename below to match).
+
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,97 +24,114 @@
   </head>
   <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Sean</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Sean</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-gradient">
+    <div class="container py-5 text-center text-light">
+      <h1 class="display-4 fw-extrabold">Sean — Software Engineer in the making</h1>
+      <p class="lead mt-3">I build clean, responsive websites and love turning ideas into working products.</p>
+      <a href="resume.html" class="btn btn-light btn-lg mt-3">View Resume</a>
+      <a href="portfolio.html" class="btn btn-outline-light btn-lg mt-3 ms-2">See Projects</a>
+    </div>
+  </header>
+
+  <section class="container my-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold">What I can do</h2>
+        <p>Front-end development with HTML, CSS, Bootstrap and JavaScript. Comfortable with Git/GitHub and SQL. Focused on accessibility, performance and clean UI.</p>
+        <ul>
+          <li>Responsive layouts using the Bootstrap grid</li>
+          <li>Reusable components, clear typography and semantic HTML</li>
+          <li>Version control with Git and deployment to GitHub Pages</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <!-- Replace the placeholder image with your GIF -->
+        <img class="img-fluid rounded-4 shadow"
+             src="img/portfolio-demo.gif"
+             alt="Animated preview of my projects and site"
+             loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Featured Projects</h2>
+      <div class="row g-4">
+        <!-- Python Quiz Game -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Python Quiz Game</h5>
+              <p class="card-text">Interactive quiz with scoring, input validation and a Turtle animation. Demonstrates loops, conditionals and functions in Python.</p>
+              <a href="portfolio.html#python-quiz" class="btn btn-primary"
+                 onclick="location.href='portfolio.html';">View on Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SnapEats Database -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">SnapEats Relational Database</h5>
+              <p class="card-text">3NF schema for a food-delivery platform (Member, Restaurant, MenuItem, Order, OrderItem, Driver) with PK/FK integrity and example queries.</p>
+              <a href="portfolio.html#snapeats" class="btn btn-outline-primary"
+                 onclick="location.href='portfolio.html';">View on Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-more placeholder -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">More coming soon</h5>
+              <p class="card-text">New web experiments and mini-apps as I learn more JavaScript and backend fundamentals.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 mt-5 border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md-4 mb-0 text-muted small">© 2025 Sean — Resume Website</p>
+      <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <span class="visually-hidden">Top</span>
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="resume.html" class="nav-link px-2 text-muted">Resume</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-muted">Projects</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </footer>
 
-<header class="py-5 bg-gradient">
-  <div class="container py-5 text-center text-light">
-    <h1 class="display-4 fw-extrabold">Sean — Software Engineer in the making</h1>
-    <p class="lead mt-3">I build clean, responsive websites and love turning ideas into working products.</p>
-    <a href="resume.html" class="btn btn-light btn-lg mt-3">View Resume</a>
-    <a href="portfolio.html" class="btn btn-outline-light btn-lg mt-3 ms-2">See Projects</a>
-  </div>
-</header>
-
-<section class="container my-5">
-  <div class="row g-4 align-items-center">
-    <div class="col-md-6">
-      <h2 class="fw-bold">What I can do</h2>
-      <p>Front‑end development with HTML, CSS, Bootstrap and JavaScript. Comfortable with Git/GitHub and basic SQL. Strong focus on accessibility, performance and clean UI.</p>
-      <ul>
-        <li>Responsive layouts using the Bootstrap grid</li>
-        <li>Reusable components, clear typography and semantic HTML</li>
-        <li>Version control with Git and deployment to GitHub Pages</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <img class="img-fluid rounded-4 shadow" src="img/placeholder-hero.jpg" alt="Screenshot collage of projects">
-    </div>
-  </div>
-</section>
-
-<section class="bg-light py-5">
-  <div class="container">
-    <h2 class="fw-bold mb-4">Featured Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Project One</h5>
-            <p class="card-text">Brief overview of a project you’re proud of. State the goal, tools used, and your role.</p>
-            <a href="#" class="btn btn-primary">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Project Two</h5>
-            <p class="card-text">Short description. Include measurable results if possible (e.g., load time reduced 30%).</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Project Three</h5>
-            <p class="card-text">Another project summary with a bullet list of responsibilities or features.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="py-4 mt-5 border-top">
-  <div class="container d-flex flex-wrap justify-content-between align-items-center">
-    <p class="col-md-4 mb-0 text-muted small">© 2025 Sean — Resume Website</p>
-    <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <span class="visually-hidden">Top</span>
-    </a>
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-      <li class="nav-item"><a href="resume.html" class="nav-link px-2 text-muted">Resume</a></li>
-      <li class="nav-item"><a href="portfolio.html" class="nav-link px-2 text-muted">Projects</a></li>
-      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
-    </ul>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
+```
+
+**Heads-up:** If your GIF filename is different, just change `src="img/portfolio-demo.gif"` to match. If you want me to compress/resize the GIF for faster loading, send it here and I’ll optimise it.

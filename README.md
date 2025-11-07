@@ -26,7 +26,8 @@ The design is mobile-responsive, accessible, and visually consistent. It include
 2. To review the source code, browse this repository.
 
 ## Submission Details
-- **Student Name:** Sean Mourdhuj  
+- **Student Name:** Sean Mourdhuj
+- **Student ID:** 22213693 
 - **Unit:** INF0005 Website Design  
 - **Assessment:** Task 3 – Web Design (Professional Task)  
 - **Instructor:** Mr. Tran  

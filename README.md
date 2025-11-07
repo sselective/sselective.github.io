@@ -1,22 +1,34 @@
 # Sean — Resume Website (Bootstrap)
 
-Edit the HTML pages to add your content (About, Resume, Projects, Contact).
+This repository contains my professional resume and portfolio website for **INF0005 Website Design (Assessment 3)** at Western Sydney University.
 
-## How to publish (GitHub Pages)
-1. Create a GitHub account if you don't have one.
-2. Make a repository named **username.github.io** (replace `username` with your GitHub username).
-3. Upload all files from this folder to that repository and commit.
-4. In repo **Settings → Pages**, set Branch to **main** and folder to **/(root)**. Save.
-5. Wait up to a couple minutes, then click **Visit site**. Your site will be at `https://username.github.io`.
+## About the Project
+This project demonstrates my understanding of responsive web design, accessibility, and clean UI structure using **HTML, CSS, and Bootstrap 5**.  
+The website includes five sections:
+- **Home**
+- **About**
+- **Resume**
+- **Projects**
+- **Contact**
 
-## What to customise
-- Replace placeholder images in `/img`.
-- Fill out each page with professional, proofread content (~1000‑word equivalent across the site).
-- Update the mailto address in `contact.html`.
-- Export your resume to PDF and drop it in the root as `Sean_Resume.pdf` (or change the link).
-- Check accessibility: keyboard navigation, alt text, colour contrast.
-- Validate HTML/CSS and test on mobile + desktop.
+The design is mobile-responsive, accessible, and visually consistent. It includes professional written content (~1000 words) that reflects my learning, skills, and career aspirations as a future software engineer.
 
-## Submission
-- Paste your live site URL to vUWS as required by the assignment.
-- Keep your repo Public so markers can view your code.
+## Technologies Used
+- HTML5, CSS3, Bootstrap 5  
+- GitHub Pages for hosting  
+- Visual Studio Code for editing  
+
+## Live Site
+🔗 **https://sselective.github.io/**
+
+## How to View
+1. Visit the live site link above.
+2. To review the source code, browse this repository.
+
+## Submission Details
+- **Student Name:** Sean Mourdhuj  
+- **Unit:** INF0005 Website Design  
+- **Assessment:** Task 3 – Web Design (Professional Task)  
+- **Instructor:** Mr. Chen  
+
+---
